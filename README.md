@@ -1,7 +1,7 @@
 # TypeWriter-Effect --> Get below Tag to use TypeWriter Effect in your Code </hr>
  
 	
-	`<script src="https://cdn.jsdelivr.net/gh/DJ-InfinityCoder/TypeWriter-Effect/typewriter.js" 
+	<script src="https://cdn.jsdelivr.net/gh/DJ-InfinityCoder/TypeWriter-Effect/typewriter.js" 
     targetElementId="targetElementId"  // comment:--> use any one of class or ID for costomize div if you use in placr of <div id="typewriter"></div>
     targetElementClass="targetElementClass" // remove comment after read for running of code 
     sentences='[
