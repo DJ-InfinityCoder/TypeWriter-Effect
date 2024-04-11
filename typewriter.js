@@ -31,6 +31,17 @@ function initTypewriter(options) {
     cursor.textContent = '|';
     typewriter.appendChild(cursor);
 
+    cursor.style.display = 'inline';
+    cursor.style.fontWeight = 'bold';
+    cursor.style.animation = 'blink-animation 0.75s infinite';
+
+    const styleSheet = document.styleSheets[0];
+    const keyframes = `@keyframes blink-animation {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }`;
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+    
     let sentenceIndex = 0;
     let charIndex = 0;
 
