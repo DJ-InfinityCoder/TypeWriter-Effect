@@ -35,12 +35,14 @@ function initTypewriter(options) {
     cursor.style.fontWeight = 'bold';
     cursor.style.animation = 'blink-animation 0.75s infinite';
 
-    const styleSheet = document.styleSheets[0];
     const keyframes = `@keyframes blink-animation {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
     }`;
-    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+    
+    const styleElement = document.createElement('style');
+    styleElement.appendChild(document.createTextNode(keyframes));
+    document.head.appendChild(styleElement);
     
     let sentenceIndex = 0;
     let charIndex = 0;
